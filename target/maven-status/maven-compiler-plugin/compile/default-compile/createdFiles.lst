@@ -1,0 +1,7 @@
+kian\springframework\mymsscbeerservice\web\controller\BeerController.class
+kian\springframework\mymsscbeerservice\web\model\Beer.class
+kian\springframework\mymsscbeerservice\MyMsscBeerServiceApplication.class
+kian\springframework\mymsscbeerservice\web\service\BeerService.class
+kian\springframework\mymsscbeerservice\web\utility\enums\BeerStyleEnum.class
+kian\springframework\mymsscbeerservice\web\model\Beer$BeerBuilder.class
+kian\springframework\mymsscbeerservice\web\repository\BeerRepository.class

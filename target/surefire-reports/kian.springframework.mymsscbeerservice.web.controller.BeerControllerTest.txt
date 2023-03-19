@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: kian.springframework.mymsscbeerservice.web.controller.BeerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.937 s <<< FAILURE! - in kian.springframework.mymsscbeerservice.web.controller.BeerControllerTest
+updateBeerById  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerController' defined in file [C:\Users\Mohammad\Documents\Java Learning\my-mssc-beer-service\target\classes\kian\springframework\mymsscbeerservice\web\controller\BeerController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kian.springframework.mymsscbeerservice.web.service.BeerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kian.springframework.mymsscbeerservice.web.service.BeerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+
+saveNewBeer  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerController' defined in file [C:\Users\Mohammad\Documents\Java Learning\my-mssc-beer-service\target\classes\kian\springframework\mymsscbeerservice\web\controller\BeerController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kian.springframework.mymsscbeerservice.web.service.BeerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kian.springframework.mymsscbeerservice.web.service.BeerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+
+getBeerById  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerController' defined in file [C:\Users\Mohammad\Documents\Java Learning\my-mssc-beer-service\target\classes\kian\springframework\mymsscbeerservice\web\controller\BeerController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kian.springframework.mymsscbeerservice.web.service.BeerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kian.springframework.mymsscbeerservice.web.service.BeerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+
+deleteBeerById  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerController' defined in file [C:\Users\Mohammad\Documents\Java Learning\my-mssc-beer-service\target\classes\kian\springframework\mymsscbeerservice\web\controller\BeerController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kian.springframework.mymsscbeerservice.web.service.BeerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kian.springframework.mymsscbeerservice.web.service.BeerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+
+getBeerByUpc  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'beerController' defined in file [C:\Users\Mohammad\Documents\Java Learning\my-mssc-beer-service\target\classes\kian\springframework\mymsscbeerservice\web\controller\BeerController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kian.springframework.mymsscbeerservice.web.service.BeerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kian.springframework.mymsscbeerservice.web.service.BeerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+

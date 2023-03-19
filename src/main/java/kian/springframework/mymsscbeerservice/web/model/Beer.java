@@ -1,21 +1,27 @@
 package kian.springframework.mymsscbeerservice.web.model;
 
+import kian.springframework.mymsscbeerservice.web.utility.enums.BeerStyleEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
-import java.util.UUID;
+
 
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class BeerDto {
-    private UUID id;
+@Document("Beer")
+public class Beer {
+
+    @Id
+    private String id;
     private Integer version;
 
     private OffsetDateTime createdDate;
