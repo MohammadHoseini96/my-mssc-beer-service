@@ -1,0 +1,23 @@
+version: "3.8"
+
+networks:
+  backend:
+    external: false
+    name: backend
+services:
+  brewerymongodb:
+    networks:
+      - backend
+    image: mongo:latest
+    container_name: brewerymongodb
+    ports:
+      - 27017:27017
+  beer-service-image:
+    networks:
+      - backend
+    image: movie-app-image
+    container_name: beer-service-image
+    ports:
+      - 8080:8080
+    links:
+      - brewerymongodb
