@@ -10,14 +10,26 @@ services:
       - backend
     image: mongo:latest
     container_name: brewerymongodb
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
     ports:
       - 27017:27017
+    volumes:
+      - mongodb:/data/db
   beer-service-image:
+    build: .
+    restart: always
     networks:
       - backend
-    image: movie-app-image
+    image: beer-app-image
     container_name: beer-service-image
     ports:
       - 8080:8080
-    links:
+    depends_on:
       - brewerymongodb
+
+volumes:
+  mongodb:
+    external: false
