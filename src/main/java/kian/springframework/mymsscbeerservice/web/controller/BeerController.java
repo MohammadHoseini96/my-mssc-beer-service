@@ -28,14 +28,12 @@ public class BeerController {
 //        HttpHeaders headers = new HttpHeaders();
 //        headers.add("Location", savedBeerDto.getId().toString());
 
-        //todo impl
         return new ResponseEntity<>(beerService.saveNewBeer(beerDto), HttpStatus.CREATED);
     }
 
     @PutMapping("/{beerId}")
     public ResponseEntity updateBeerById(@PathVariable("beerId") UUID beerId, @Validated @RequestBody BeerDto beerDto) {
 
-        //todo impl
         return new ResponseEntity(beerService.updateBeer(beerId, beerDto) ,HttpStatus.NO_CONTENT);
     }
 
